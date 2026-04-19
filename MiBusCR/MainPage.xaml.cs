@@ -15,17 +15,6 @@ namespace MiBusCR
             _ = VerificarConexionSupabase();
         }
 
-        private void OnCounterClicked(object? sender, EventArgs e)
-        {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
-        }
 
         private async Task VerificarConexionSupabase()
         {
@@ -73,6 +62,14 @@ namespace MiBusCR
                 });
             }
         }
+
+        private async void OnVerRutasClicked(object sender, EventArgs e)
+        {
+            // Navigation.PushAsync "empuja" la nueva pantalla sobre la actual
+            await Navigation.PushAsync(new InformacionRutasV2());
+        }
+
+
     }
 
 

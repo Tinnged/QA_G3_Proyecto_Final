@@ -66,4 +66,16 @@
 		<PackageReference Include="Supabase.Postgrest" Version="4.1.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiXaml Update="InformacionRutasV2.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="PanelAdministrador.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="UserFeedback.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>
