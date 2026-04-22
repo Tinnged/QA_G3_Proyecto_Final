@@ -67,13 +67,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="DetalleRuta.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="InformacionRutasV2.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="PanelAdministrador.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="UserFeedback.xaml">
+	  <MauiXaml Update="TarifasMetodosPago.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

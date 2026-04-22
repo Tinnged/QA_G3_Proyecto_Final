@@ -23,6 +23,15 @@ namespace MiBusCR.Models
 
         [Column("orden_parada")]
         public int OrdenParada { get; set; }
+
+        [Reference(typeof(Parada))]
+        public Parada DetalleParada { get; set; }
+
+        public bool NoEsLaPrimera { get; set; }
+        public bool NoEsLaUltima { get; set; }
+
     }
+
+
 
 }

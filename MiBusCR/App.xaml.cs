@@ -2,6 +2,7 @@
 {
     public partial class App : Application
     {
+        public static Supabase.Client SupabaseClient { get; private set; }
         public App()
         {
             InitializeComponent();

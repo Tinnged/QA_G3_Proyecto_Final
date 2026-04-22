@@ -1,153 +1,149 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:MiBusCR.Models"
              x:Class="MiBusCR.MainPage"
-             Title="MiBusCR - Test Project"
+             Title="MiBusCR"
+             x:Name="thisPage"
              BackgroundColor="#F3F4F6">
-
-
-
 
     <Grid RowDefinitions="Auto, Auto, *">
 
-        <Grid Grid.Row="0" ColumnDefinitions="*, Auto" Margin="15,15,15,0">
-            <Label Grid.Column="0"
-               x:Name="PruebaZe"
-               Text="MiBusCR"
-               Style="{StaticResource Headline}"
-               SemanticProperties.HeadingLevel="Level1"
-               VerticalOptions="Center" />
+        <!-- Header -->
+        <Grid Grid.Row="0" ColumnDefinitions="*, Auto"
+              BackgroundColor="White"
+              Padding="15,14">
+            <VerticalStackLayout Grid.Column="0" Spacing="2" VerticalOptions="Center">
+                <Label Text="MiBusCR"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="#111827"/>
+                <Label x:Name="PruebaZe"
+                       Text="Conectando..."
+                       FontSize="12"
+                       TextColor="#6B7280"/>
+            </VerticalStackLayout>
 
             <Button Grid.Column="1"
-                Text="Admin"
-                FontSize="12"
-                BackgroundColor="Transparent"
-                TextColor="#9CA3AF"
-                Padding="8,0"
-                HeightRequest="35"
-                VerticalOptions="Center" />
+                    Text="Administradores"
+                    FontSize="12"
+                    BackgroundColor="#F3F4F6"
+                    TextColor="#6B7280"
+                    CornerRadius="8"
+                    Padding="10,6"
+                    HeightRequest="35"
+                    VerticalOptions="Center"
+                    Clicked="OnAdminClicked"/>
         </Grid>
 
-        <SearchBar Grid.Row="1" 
-               Placeholder="Buscar ruta (ej. Santa Ana)..." 
-               Margin="15,10,15,5" 
-               BackgroundColor="White" />
+        <!-- SearchBar -->
+        <Border Grid.Row="1"
+                StrokeShape="RoundRectangle 10"
+                BackgroundColor="White"
+                Stroke="#E5E7EB"
+                StrokeThickness="1"
+                Margin="15,12,15,4"
+                Padding="4,0">
+            <SearchBar Placeholder="Buscar por ruta o provincia..."
+                       TextChanged="OnSearchBarTextChanged"
+                       BackgroundColor="Transparent"/>
+        </Border>
 
-        <ScrollView Grid.Row="2">
-            <VerticalStackLayout Spacing="15" Margin="15,10,15,20">
+        <!-- Lista de rutas -->
+        <CollectionView Grid.Row="2"
+                        ItemsSource="{Binding Source={x:Reference thisPage}, Path=RutasAMostrar}"
+                        Margin="15,8,15,20">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" ItemSpacing="12"/>
+            </CollectionView.ItemsLayout>
 
-                <Border StrokeShape="RoundRectangle 12" 
-                    BackgroundColor="White" 
-                    Padding="15" 
-                    Stroke="#E5E7EB" 
-                    StrokeThickness="1">
-                    <StackLayout Spacing="8">
-                        <Grid ColumnDefinitions="*, Auto">
-                            <Label Grid.Column="0" Text="San José - Santa Ana" FontSize="18" FontAttributes="Bold" TextColor="#111827" />
-                            <Border Grid.Column="1" BackgroundColor="#DEF7EC" StrokeShape="RoundRectangle 20" Padding="8,4">
-                                <Label Text="Activa" TextColor="#059669" FontAttributes="Bold" FontSize="11" />
-                            </Border>
-                        </Grid>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Ruta">
+                    <Border StrokeShape="RoundRectangle 12"
+                            BackgroundColor="White"
+                            Padding="16"
+                            Stroke="#E5E7EB"
+                            StrokeThickness="1">
+                        <VerticalStackLayout Spacing="10">
 
-                        <StackLayout Orientation="Horizontal" Spacing="5">
-                            <Label Text="Tarifa:" TextColor="#6B7280" VerticalOptions="Center"/>
-                            <Label Text="₡350" TextColor="#10B981" FontAttributes="Bold" FontSize="16"/>
-                        </StackLayout>
+                            <!-- Nombre + Badge Activa -->
+                            <Grid ColumnDefinitions="*, Auto">
+                                <Label Grid.Column="0"
+                                       Text="{Binding Nombre}"
+                                       FontSize="17"
+                                       FontAttributes="Bold"
+                                       TextColor="#111827"
+                                       VerticalOptions="Center"/>
+                                <Border Grid.Column="1"
+                                        BackgroundColor="#DEF7EC"
+                                        StrokeShape="RoundRectangle 20"
+                                        Stroke="Transparent"
+                                        Padding="10,4">
+                                    <Label Text="Activa"
+                                           TextColor="#059669"
+                                           FontAttributes="Bold"
+                                           FontSize="11"/>
+                                </Border>
+                            </Grid>
 
-                        <StackLayout Orientation="Horizontal" Spacing="10" Margin="0,0,0,5">
-                            <Label Text="Efectivo" FontSize="13" TextColor="#4B5563"/>
-                            <Label Text="Tarjeta" FontSize="13" TextColor="#4B5563"/>
-                            <Label Text="SINPE" FontSize="13" TextColor="#4B5563"/>
-                        </StackLayout>
 
-                        <Button Text="Ver Mapa y Paradas" 
-                            BackgroundColor="#2563EB" 
-                            TextColor="White" 
-                            CornerRadius="8" 
-                            FontAttributes="Bold"
-                            Margin="0,5,0,0"
-                                Clicked="OnVerRutasClicked"/>
-                    </StackLayout>
-                </Border>
 
-                <Border StrokeShape="RoundRectangle 12" 
-                    BackgroundColor="White" 
-                    Padding="15" 
-                    Stroke="#E5E7EB" 
-                    StrokeThickness="1">
-                    <StackLayout Spacing="8">
-                        <Grid ColumnDefinitions="*, Auto">
-                            <Label Grid.Column="0" Text="San José - Heredia (Pista)" FontSize="18" FontAttributes="Bold" TextColor="#111827" />
-                            <Border Grid.Column="1" BackgroundColor="#FDE8E8" StrokeShape="RoundRectangle 20" Padding="8,4">
-                                <Label Text="Alerta" TextColor="#C81E1E" FontAttributes="Bold" FontSize="11" />
-                            </Border>
-                        </Grid>
+                            <!-- Tarifa -->
+                            <Label Text="{Binding MontoTarifa, StringFormat='₡{0:N0}'}"
+                                   TextColor="#059669"
+                                   FontAttributes="Bold"
+                                   FontSize="17"/>
 
-                        <StackLayout Orientation="Horizontal" Spacing="5">
-                            <Label Text="Tarifa:" TextColor="#6B7280" VerticalOptions="Center"/>
-                            <Label Text="₡520" TextColor="#10B981" FontAttributes="Bold" FontSize="16"/>
-                        </StackLayout>
+                            <!-- Badges métodos de pago -->
+                            <FlexLayout Wrap="Wrap" Direction="Row">
+                                <Border BackgroundColor="#DCFCE7"
+                                        StrokeShape="RoundRectangle 6"
+                                        Stroke="Transparent"
+                                        Padding="8,4"
+                                        Margin="0,0,6,0"
+                                        IsVisible="{Binding AceptaEfectivo}">
+                                    <Label Text="Efectivo"
+                                           FontSize="11"
+                                           TextColor="#166534"/>
+                                </Border>
+                                <Border BackgroundColor="#DBEAFE"
+                                        StrokeShape="RoundRectangle 6"
+                                        Stroke="Transparent"
+                                        Padding="8,4"
+                                        Margin="0,0,6,0"
+                                        IsVisible="{Binding AceptaTarjeta}">
+                                    <Label Text="Tarjeta"
+                                           FontSize="11"
+                                           TextColor="#1D4ED8"/>
+                                </Border>
+                                <Border BackgroundColor="#FFEDD5"
+                                        StrokeShape="RoundRectangle 6"
+                                        Stroke="Transparent"
+                                        Padding="8,4"
+                                        Margin="0,0,6,0"
+                                        IsVisible="{Binding AceptaSinpe}">
+                                    <Label Text="SINPE"
+                                           FontSize="11"
+                                           TextColor="#9A3412"/>
+                                </Border>
+                            </FlexLayout>
 
-                        <StackLayout Orientation="Horizontal" Spacing="10" Margin="0,0,0,5">
-                            <Label Text="Efectivo" FontSize="13" TextColor="#4B5563"/>
-                            <Label Text="SINPE" FontSize="13" TextColor="#4B5563"/>
-                        </StackLayout>
-
-                        <Label Text="Choque en la autopista, retraso de 15 min." 
-                           TextColor="#C81E1E" 
-                           FontSize="12" 
-                           FontAttributes="Italic" />
-
-                        <Button Text="Ver Mapa y Paradas" 
-                            BackgroundColor="#2563EB" 
-                            TextColor="White" 
-                            CornerRadius="8" 
-                            FontAttributes="Bold"
-                            Margin="0,5,0,0"
-                                Clicked="OnVerRutasClicked"/>
-                    </StackLayout>
-                </Border>
-
-                <Border StrokeShape="RoundRectangle 12" 
-                    BackgroundColor="White" 
-                    Padding="15" 
-                    Stroke="#E5E7EB" 
-                    StrokeThickness="1">
-                    <StackLayout Spacing="8">
-                        <Grid ColumnDefinitions="*, Auto">
-                            <Label Grid.Column="0" Text="San José - San Pedro" FontSize="18" FontAttributes="Bold" TextColor="#111827" />
-                            <Border Grid.Column="1" BackgroundColor="#DEF7EC" StrokeShape="RoundRectangle 20" Padding="8,4">
-                                <Label Text="Activa" TextColor="#059669" FontAttributes="Bold" FontSize="11" />
-                            </Border>
-                        </Grid>
-
-                        <StackLayout Orientation="Horizontal" Spacing="5">
-                            <Label Text="Tarifa:" TextColor="#6B7280" VerticalOptions="Center"/>
-                            <Label Text="₡350" TextColor="#10B981" FontAttributes="Bold" FontSize="16"/>
-                        </StackLayout>
-
-                        <StackLayout Orientation="Horizontal" Spacing="10" Margin="0,0,0,5">
-                            <Label Text="Efectivo" FontSize="13" TextColor="#4B5563"/>
-                            <Label Text="Tarjeta" FontSize="13" TextColor="#4B5563"/>
-                        </StackLayout>
-
-                        <Button Text="Ver Mapa y Paradas" 
-        BackgroundColor="#2563EB" 
-        TextColor="White" 
-        CornerRadius="8" 
+                            <!-- Ver detalles -->
+                            <Button Text="Ver detalles de la ruta"
+        BackgroundColor="#2563EB"
+        TextColor="White"
+        CornerRadius="8"
         FontAttributes="Bold"
-        Margin="0,5,0,0"
-        Clicked="OnVerRutasClicked" />
-                        
-                    </StackLayout>
-                </Border>
+        Margin="0,4,0,0"
+        Clicked="OnVerRutasClicked"
+        BindingContext="{Binding .}"/>
+                            
 
-            </VerticalStackLayout>
-        </ScrollView>
+                        </VerticalStackLayout>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
     </Grid>
-
-
 </ContentPage>
-
-
-

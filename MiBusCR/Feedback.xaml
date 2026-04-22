@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiBusCR.Feedback"
+             Title="Reportar Problema"
+             BackgroundColor="#F3F4F6">
+
+    <Grid RowDefinitions="Auto, *">
+
+        <!-- Header -->
+        <Grid Grid.Row="0" ColumnDefinitions="Auto, *" BackgroundColor="White"
+              Padding="15,12">
+            <Button Grid.Column="0"
+                    Text="&#8592;"
+                    FontSize="20"
+                    BackgroundColor="Transparent"
+                    TextColor="#111827"
+                    Padding="0"
+                    WidthRequest="36"
+                    HeightRequest="36"
+                    Clicked="OnBackClicked"/>
+            <Label Grid.Column="1"
+                   Text="Reportar Problema"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="#111827"
+                   VerticalOptions="Center"
+                   Margin="8,0,0,0"/>
+        </Grid>
+
+        <!-- Scrollable form -->
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Spacing="16" Margin="15,16,15,30">
+
+                <!-- Intro card -->
+                <Border StrokeShape="RoundRectangle 12"
+                        BackgroundColor="#EFF6FF"
+                        Padding="14"
+                        Stroke="#BFDBFE"
+                        StrokeThickness="1">
+                    <Label Text="Tu reporte ayuda a mejorar el servicio de transporte. Seleccioná el tipo de problema."
+                           FontSize="13"
+                           TextColor="#1D4ED8"/>
+                </Border>
+
+                <!-- Ruta (prellenada) -->
+                <Border StrokeShape="RoundRectangle 12"
+                        BackgroundColor="White"
+                        Padding="15"
+                        Stroke="#E5E7EB"
+                        StrokeThickness="1">
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="Ruta"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#374151"/>
+                        <Border StrokeShape="RoundRectangle 8"
+                                BackgroundColor="#F9FAFB"
+                                Stroke="#D1D5DB"
+                                StrokeThickness="1"
+                                Padding="12,10">
+                            <Label x:Name="LabelNombreRuta"
+                                   FontSize="14"
+                                   TextColor="#111827"/>
+                        </Border>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Tipo de reporte -->
+                <Border StrokeShape="RoundRectangle 12"
+                        BackgroundColor="White"
+                        Padding="15"
+                        Stroke="#E5E7EB"
+                        StrokeThickness="1">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Categoría del problema *"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#374151"/>
+
+                        <!-- Información incorrecta -->
+                        <Border x:Name="BorderInfoIncorrecta"
+                                StrokeShape="RoundRectangle 10"
+                                BackgroundColor="#F9FAFB"
+                                Stroke="#D1D5DB"
+                                StrokeThickness="1.5"
+                                Padding="14,12">
+                            <Grid ColumnDefinitions="*, Auto">
+                                <VerticalStackLayout Grid.Column="0" VerticalOptions="Center" Spacing="2">
+                                    <Label Text="Información incorrecta"
+                                           FontSize="14"
+                                           FontAttributes="Bold"
+                                           TextColor="#111827"/>
+                                    <Label Text="Tarifas, horarios o paradas incorrectos"
+                                           FontSize="11"
+                                           TextColor="#6B7280"/>
+                                </VerticalStackLayout>
+                                <Label x:Name="CheckInfoIncorrecta"
+                                       Grid.Column="1"
+                                       Text="○"
+                                       FontSize="20"
+                                       TextColor="#D1D5DB"
+                                       VerticalOptions="Center"/>
+                            </Grid>
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnCategoriaInfoIncorrecta"/>
+                            </Border.GestureRecognizers>
+                        </Border>
+
+                        <!-- Problema con el bus -->
+                        <Border x:Name="BorderProblemaBus"
+                                StrokeShape="RoundRectangle 10"
+                                BackgroundColor="#F9FAFB"
+                                Stroke="#D1D5DB"
+                                StrokeThickness="1.5"
+                                Padding="14,12">
+                            <Grid ColumnDefinitions="*, Auto">
+                                <VerticalStackLayout Grid.Column="0" VerticalOptions="Center" Spacing="2">
+                                    <Label Text="Problema con el bus"
+                                           FontSize="14"
+                                           FontAttributes="Bold"
+                                           TextColor="#111827"/>
+                                    <Label Text="Retrasos, fallas mecánicas o mal servicio"
+                                           FontSize="11"
+                                           TextColor="#6B7280"/>
+                                </VerticalStackLayout>
+                                <Label x:Name="CheckProblemaBus"
+                                       Grid.Column="1"
+                                       Text="○"
+                                       FontSize="20"
+                                       TextColor="#D1D5DB"
+                                       VerticalOptions="Center"/>
+                            </Grid>
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnCategoriaProblemaBus"/>
+                            </Border.GestureRecognizers>
+                        </Border>
+
+                        <!-- Otro -->
+                        <Border x:Name="BorderOtro"
+                                StrokeShape="RoundRectangle 10"
+                                BackgroundColor="#F9FAFB"
+                                Stroke="#D1D5DB"
+                                StrokeThickness="1.5"
+                                Padding="14,12">
+                            <Grid ColumnDefinitions="*, Auto">
+                                <VerticalStackLayout Grid.Column="0" VerticalOptions="Center" Spacing="2">
+                                    <Label Text="Otro"
+                                           FontSize="14"
+                                           FontAttributes="Bold"
+                                           TextColor="#111827"/>
+                                    <Label Text="Cualquier otro tipo de problema o sugerencia"
+                                           FontSize="11"
+                                           TextColor="#6B7280"/>
+                                </VerticalStackLayout>
+                                <Label x:Name="CheckOtro"
+                                       Grid.Column="1"
+                                       Text="○"
+                                       FontSize="20"
+                                       TextColor="#D1D5DB"
+                                       VerticalOptions="Center"/>
+                            </Grid>
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnCategoriaOtro"/>
+                            </Border.GestureRecognizers>
+                        </Border>
+
+                        <Label x:Name="LabelCategoriaError"
+                               Text="Por favor seleccioná una categoría"
+                               FontSize="12"
+                               TextColor="#EF4444"
+                               IsVisible="False"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Comentario -->
+                <Border StrokeShape="RoundRectangle 12"
+                        BackgroundColor="White"
+                        Padding="15"
+                        Stroke="#E5E7EB"
+                        StrokeThickness="1">
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="Comentario (opcional)"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#374151"/>
+                        <Border StrokeShape="RoundRectangle 8"
+                                BackgroundColor="#F9FAFB"
+                                Stroke="#D1D5DB"
+                                StrokeThickness="1"
+                                Padding="12,8">
+                            <Editor x:Name="EditorComentario"
+                                    Placeholder="Describí el problema con más detalle..."
+                                    PlaceholderColor="#9CA3AF"
+                                    FontSize="14"
+                                    TextColor="#111827"
+                                    HeightRequest="100"
+                                    BackgroundColor="Transparent"
+                                    AutoSize="TextChanges"/>
+                        </Border>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Detalles del reporte -->
+                <Border x:Name="BorderDetalleRuta"
+                        StrokeShape="RoundRectangle 12"
+                        BackgroundColor="White"
+                        Padding="15"
+                        Stroke="#E5E7EB"
+                        StrokeThickness="1"
+                        IsVisible="False">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="Detalles incluidos en el reporte"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#374151"/>
+                        <Grid ColumnDefinitions="Auto, *" ColumnSpacing="8">
+                            <Label Grid.Column="0" Text="Ruta:" FontSize="13" TextColor="#6B7280"/>
+                            <Label x:Name="LabelDetalleNombreRuta"
+                                   Grid.Column="1"
+                                   FontSize="13"
+                                   FontAttributes="Bold"
+                                   TextColor="#111827"/>
+                        </Grid>
+                        <Grid ColumnDefinitions="Auto, *" ColumnSpacing="8">
+                            <Label Grid.Column="0" Text="Fecha:" FontSize="13" TextColor="#6B7280"/>
+                            <Label x:Name="LabelDetalleFecha"
+                                   Grid.Column="1"
+                                   FontSize="13"
+                                   TextColor="#111827"/>
+                        </Grid>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Botón enviar -->
+                <Button x:Name="BtnEnviar"
+                        Text="Enviar Reporte"
+                        BackgroundColor="#2563EB"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        CornerRadius="12"
+                        HeightRequest="52"
+                        Margin="0,4,0,0"
+                        Clicked="OnEnviarClicked"/>
+
+                <ActivityIndicator x:Name="LoadingIndicator"
+                                   IsRunning="False"
+                                   IsVisible="False"
+                                   Color="#2563EB"
+                                   HeightRequest="36"/>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+    </Grid>
+</ContentPage>

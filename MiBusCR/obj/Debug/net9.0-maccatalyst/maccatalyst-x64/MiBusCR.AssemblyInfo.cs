@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiBusCR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+453b5012a229f20319bf61fec4c6a184cec89e6f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+e913f068435d45d982e9ab6ecac62619f9efaf38")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiBusCR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiBusCR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

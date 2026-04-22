@@ -30,6 +30,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = MiBusCR.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[C:/Git/QA_G3_Proyecto_Final/MiBusCR/DetalleRuta.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MiBusCR.DetalleRuta.xaml
+build_metadata.AdditionalFiles.TargetPath = DetalleRuta.xaml
+build_metadata.AdditionalFiles.RelativePath = DetalleRuta.xaml
+
+[C:/Git/QA_G3_Proyecto_Final/MiBusCR/Feedback.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MiBusCR.Feedback.xaml
+build_metadata.AdditionalFiles.TargetPath = Feedback.xaml
+build_metadata.AdditionalFiles.RelativePath = Feedback.xaml
+
 [C:/Git/QA_G3_Proyecto_Final/MiBusCR/InformacionRutasV2.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MiBusCR.InformacionRutasV2.xaml
@@ -60,8 +72,8 @@ build_metadata.AdditionalFiles.ManifestResourceName = MiBusCR.Resources.Styles.S
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Git/QA_G3_Proyecto_Final/MiBusCR/UserFeedback.xaml]
+[C:/Git/QA_G3_Proyecto_Final/MiBusCR/TarifasMetodosPago.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = MiBusCR.UserFeedback.xaml
-build_metadata.AdditionalFiles.TargetPath = UserFeedback.xaml
-build_metadata.AdditionalFiles.RelativePath = UserFeedback.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MiBusCR.TarifasMetodosPago.xaml
+build_metadata.AdditionalFiles.TargetPath = TarifasMetodosPago.xaml
+build_metadata.AdditionalFiles.RelativePath = TarifasMetodosPago.xaml

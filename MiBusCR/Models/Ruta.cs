@@ -32,6 +32,18 @@ namespace MiBusCR.Models
 
         [Column("fecha_creacion")]
         public DateTime FechaCreacion { get; set; }
+
+        [Column("provincia_inicio")]
+        public string ProvinciaInicio { get; set; }
+
+        [Column("provincia_final")]
+        public string ProvinciaFinal { get; set; }
+
+        public decimal MontoTarifa { get; set; }
+        public bool AceptaEfectivo { get; set; }
+        public bool AceptaTarjeta { get; set; }
+        public bool AceptaSinpe { get; set; }
+
     }
 
 }

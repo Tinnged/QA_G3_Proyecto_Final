@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiBusCR.TarifasMetodosPago"
+             Title="Tarifas y Pagos"
+             BackgroundColor="#F3F4F6">
+
+    <Grid RowDefinitions="Auto, *">
+
+        <!-- Header -->
+        <Grid Grid.Row="0" ColumnDefinitions="Auto, *" BackgroundColor="White"
+              Padding="15,12">
+            <Button Grid.Column="0"
+                    Text="&#8592;"
+                    FontSize="20"
+                    BackgroundColor="Transparent"
+                    TextColor="#111827"
+                    Padding="0"
+                    WidthRequest="36"
+                    HeightRequest="36"
+                    Clicked="OnBackClicked"/>
+            <Label Grid.Column="1"
+                   Text="Tarifas y Métodos de Pago"
+                   FontSize="17"
+                   FontAttributes="Bold"
+                   TextColor="#111827"
+                   VerticalOptions="Center"
+                   Margin="8,0,0,0"/>
+        </Grid>
+
+        <!-- Content -->
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Spacing="16" Margin="15,16,15,30">
+
+                <!-- Loading indicator -->
+                <ActivityIndicator x:Name="LoadingIndicator"
+                                   IsRunning="True"
+                                   IsVisible="True"
+                                   Color="#2563EB"
+                                   HeightRequest="50"
+                                   Margin="0,20,0,0"/>
+
+                <!-- Error state -->
+                <Border x:Name="BorderError"
+                        StrokeShape="RoundRectangle 12"
+                        BackgroundColor="#FEF2F2"
+                        Padding="15"
+                        Stroke="#FECACA"
+                        StrokeThickness="1"
+                        IsVisible="False">
+                    <VerticalStackLayout Spacing="8" HorizontalOptions="Center">
+                        <Label Text="⚠ No se pudo cargar la información"
+                               FontSize="15"
+                               FontAttributes="Bold"
+                               TextColor="#DC2626"
+                               HorizontalOptions="Center"/>
+                        <Label x:Name="LabelErrorMsg"
+                               FontSize="13"
+                               TextColor="#7F1D1D"
+                               HorizontalOptions="Center"/>
+                        <Button Text="Reintentar"
+                                BackgroundColor="#DC2626"
+                                TextColor="White"
+                                CornerRadius="8"
+                                Clicked="OnReintentarClicked"
+                                Margin="0,4,0,0"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Tarifa principal card -->
+                <Border x:Name="BorderTarifa"
+                        StrokeShape="RoundRectangle 12"
+                        BackgroundColor="White"
+                        Padding="20"
+                        Stroke="#E5E7EB"
+                        StrokeThickness="1"
+                        IsVisible="False">
+                    <VerticalStackLayout Spacing="12">
+                        <Label Text="Tarifa Vigente"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#6B7280"
+                               CharacterSpacing="1"/>
+
+                        <!-- Main fare display -->
+                        <Grid ColumnDefinitions="*, Auto" RowDefinitions="Auto, Auto">
+                            <Label Grid.Row="0" Grid.Column="0"
+                                   x:Name="LabelNombreRuta"
+                                   Text=""
+                                   FontSize="18"
+                                   FontAttributes="Bold"
+                                   TextColor="#111827"/>
+                            <Border Grid.Row="0" Grid.Column="1"
+                                    BackgroundColor="#DEF7EC"
+                                    StrokeShape="RoundRectangle 20"
+                                    Padding="10,5">
+                                <Label x:Name="LabelEstadoRuta"
+                                       Text="Activa"
+                                       TextColor="#059669"
+                                       FontAttributes="Bold"
+                                       FontSize="11"/>
+                            </Border>
+                            <Label Grid.Row="1" Grid.ColumnSpan="2"
+                                   x:Name="LabelMonto"
+                                   Text=""
+                                   FontSize="42"
+                                   FontAttributes="Bold"
+                                   TextColor="#2563EB"
+                                   Margin="0,4,0,0"/>
+                        </Grid>
+
+                        <Label x:Name="LabelMoneda"
+                               Text=""
+                               FontSize="13"
+                               TextColor="#6B7280"
+                               Margin="0,-8,0,0"/>
+
+                        <!-- Passenger type differentiation note -->
+                        <Border x:Name="BorderTiposPasajero"
+                                StrokeShape="RoundRectangle 8"
+                                BackgroundColor="#F0FDF4"
+                                Stroke="#BBF7D0"
+                                StrokeThickness="1"
+                                Padding="12,10"
+                                IsVisible="False">
+                            <StackLayout Orientation="Horizontal" Spacing="8">
+                                <Label Text="🎓"
+                                       FontSize="16"
+                                       VerticalOptions="Center"/>
+                                <Label Text="Aplica diferenciación por tipo de pasajero (adulto mayor, estudiante, etc.)"
+                                       FontSize="12"
+                                       TextColor="#166534"
+                                       VerticalOptions="Center"/>
+                            </StackLayout>
+                        </Border>
+
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Payment methods card -->
+                <Border x:Name="BorderMetodosPago"
+                        StrokeShape="RoundRectangle 12"
+                        BackgroundColor="White"
+                        Padding="15"
+                        Stroke="#E5E7EB"
+                        StrokeThickness="1"
+                        IsVisible="False">
+                    <VerticalStackLayout Spacing="12">
+                        <Label Text="MÉTODOS DE PAGO ACEPTADOS"
+                               FontSize="11"
+                               FontAttributes="Bold"
+                               TextColor="#9CA3AF"
+                               CharacterSpacing="1.5"/>
+
+                        <!-- Efectivo -->
+                        <Border x:Name="BorderEfectivo"
+                                StrokeShape="RoundRectangle 10"
+                                BackgroundColor="#F0FDF4"
+                                Stroke="#BBF7D0"
+                                StrokeThickness="1"
+                                Padding="14,12"
+                                IsVisible="False">
+                            <Grid ColumnDefinitions="Auto, *">
+                                <Border Grid.Column="0"
+                                        BackgroundColor="#DCFCE7"
+                                        StrokeShape="RoundRectangle 8"
+                                        Padding="9"
+                                        WidthRequest="40"
+                                        HeightRequest="40">
+                                    <Label Text="💵" FontSize="18"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center"/>
+                                </Border>
+                                <VerticalStackLayout Grid.Column="1" Margin="12,0,0,0" VerticalOptions="Center">
+                                    <Label Text="Efectivo"
+                                           FontSize="15"
+                                           FontAttributes="Bold"
+                                           TextColor="#166534"/>
+                                    <Label Text="Billetes y monedas costarricenses"
+                                           FontSize="12"
+                                           TextColor="#16A34A"/>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Border>
+
+                        <!-- Tarjeta -->
+                        <Border x:Name="BorderTarjeta"
+                                StrokeShape="RoundRectangle 10"
+                                BackgroundColor="#EFF6FF"
+                                Stroke="#BFDBFE"
+                                StrokeThickness="1"
+                                Padding="14,12"
+                                IsVisible="False">
+                            <Grid ColumnDefinitions="Auto, *">
+                                <Border Grid.Column="0"
+                                        BackgroundColor="#DBEAFE"
+                                        StrokeShape="RoundRectangle 8"
+                                        Padding="9"
+                                        WidthRequest="40"
+                                        HeightRequest="40">
+                                    <Label Text="💳" FontSize="18"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center"/>
+                                </Border>
+                                <VerticalStackLayout Grid.Column="1" Margin="12,0,0,0" VerticalOptions="Center">
+                                    <Label Text="Tarjeta"
+                                           FontSize="15"
+                                           FontAttributes="Bold"
+                                           TextColor="#1D4ED8"/>
+                                    <Label Text="Tarjeta de débito o crédito"
+                                           FontSize="12"
+                                           TextColor="#2563EB"/>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Border>
+
+                        <!-- SINPE -->
+                        <Border x:Name="BorderSinpe"
+                                StrokeShape="RoundRectangle 10"
+                                BackgroundColor="#FFF7ED"
+                                Stroke="#FED7AA"
+                                StrokeThickness="1"
+                                Padding="14,12"
+                                IsVisible="False">
+                            <Grid ColumnDefinitions="Auto, *">
+                                <Border Grid.Column="0"
+                                        BackgroundColor="#FFEDD5"
+                                        StrokeShape="RoundRectangle 8"
+                                        Padding="9"
+                                        WidthRequest="40"
+                                        HeightRequest="40">
+                                    <Label Text="📱" FontSize="18"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center"/>
+                                </Border>
+                                <VerticalStackLayout Grid.Column="1" Margin="12,0,0,0" VerticalOptions="Center">
+                                    <Label Text="SINPE Móvil"
+                                           FontSize="15"
+                                           FontAttributes="Bold"
+                                           TextColor="#9A3412"/>
+                                    <Label Text="Transferencia por SINPE"
+                                           FontSize="12"
+                                           TextColor="#C2410C"/>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Border>
+
+                        <!-- No methods available fallback -->
+                        <Label x:Name="LabelSinMetodos"
+                               Text="No hay métodos de pago registrados para esta ruta."
+                               FontSize="13"
+                               TextColor="#6B7280"
+                               HorizontalOptions="Center"
+                               IsVisible="False"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Last updated info -->
+                <Label x:Name="LabelActualizacion"
+                       Text=""
+                       FontSize="11"
+                       TextColor="#9CA3AF"
+                       HorizontalOptions="Center"
+                       IsVisible="False"/>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+    </Grid>
+</ContentPage>
