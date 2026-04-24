@@ -183,7 +183,7 @@ namespace MiBusCR
         private async void OnAdminClicked(object sender, EventArgs e)
         {
             // await Navigation.PushAsync(new AdminPage());
-            await DisplayAlert("Esto aun no esta", "Pendiente de ser terminado por Ze, ya casi", "OK");
+          await Navigation.PushAsync(new PanelAdministrador());
         }
 
 
