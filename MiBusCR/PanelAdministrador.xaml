@@ -2,11 +2,232 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MiBusCR.PanelAdministrador"
-             Title="PanelAdministrador">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="PanelAdministrador"
+             BackgroundColor="#F3F4F6">
+
+  <ScrollView>
+     <VerticalStackLayout Padding="20" Spacing="18">
+         <Label 
+             Text="Panel Administrador"
+             FontSize="28"
+             FontAttributes="Bold"
+             TextColor="#111827" />
+         <Label
+             Text="Crear una nueva ruta con sus coordenadas"
+             FontSize="16"
+             TextColor="#6B7280" />
+            <Frame
+             BackgroundColor="White"
+             CornerRadius="18"
+             Padding="20"
+             HasShadow="True">
+
+                <VerticalStackLayout Spacing="15">
+                    <Label
+                        Text="Nombre de la ruta"
+                        FontAttributes="Bold"
+                        TextColor="Black"/>
+                    <Entry
+                        x:Name="NombreRutaEntry"
+                        Placeholder="Ejemplo: Santa Ana - Escazu"/>
+                    <Label
+                        Text="Provincia"
+                        FontAttributes="Bold"
+                        TextColor="Black"/>
+                    <Entry
+                        x:Name="ProvinciaEntry"
+                        Placeholder="Ejemplo: San Jose"/>
+                    <Label
+                        Text="Precio"
+                        FontAttributes="Bold"
+                        TextColor="Black"/>
+                    <Entry
+                        x:Name="PrecioEntry"
+                        Placeholder="Ejemplo: 550"
+                        Keyboard="Numeric"/>
+                    <Label
+                        Text="Latitud de origen"
+                        FontAttributes="Bold"
+                        TextColor="Black"/>
+                    <Entry
+                        x:Name="LatitudOrigenEntry"
+                        Placeholder="Ejemplo: 9.9325"
+                        Keyboard="Numeric"/>
+                    <Label
+                        Text="Longitud de origen"
+                        FontAttributes="Bold"
+                        TextColor="Black"/>
+                    <Entry
+                        x:Name="LongitudOrigenEntry"
+                        Placeholder="Ejemplo: -84.1824"
+                        Keyboard="Numeric"/>
+                    <Label
+                        Text="Latitud de destino"
+                        FontAttributes="Bold"
+                        TextColor="Black"/>
+                    <Entry
+                        x:Name="LatitudDestinoEntry"
+                        Placeholder="Ejemplo: 9.9280"
+                        Keyboard="Numeric"/>
+                    <Label
+                        Text="Longitud de destino"
+                        FontAttributes="Bold"
+                        TextColor="Black"/>
+                    <Entry
+                        x:Name="LongitudDestinoEntry"
+                        Placeholder="Ejemplo: -84.1450"
+                        Keyboard="Numeric"/>
+
+                    <Button
+                        Text="Guardar ruta"
+                        Background="#2563EB"
+                        TextColor="White"
+                        CornerRadius="12"
+                        HeightRequest="50"
+                        Clicked="OnGuardarRutaClicked"/>
+                    <Label
+                        x:Name="MensajeLabel"
+                        Text=""
+                        FontAttributes="Bold"
+                        IsVisible="False"/>
+
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame
+             BackgroundColor="White"
+             CornerRadius="18"
+             Padding="20"
+             HasShadow="True">
+
+                <VerticalStackLayout Spacing="15">
+
+                    <Label 
+                        Text="Agregar o editar puntos de parada"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        TextColor="Black"/>
+
+                    <Label
+                        Text="Ruta asociada"
+                        FontAttributes="Bold"
+                        TextColor="Black"/>
+                    <Entry
+                        x:Name="RutaParadaEntry"
+                        Placeholder="Ejemplo: Curridabat - Escazu"/>
+
+                    <Label
+                        Text="Nombre de la parada"
+                        FontAttributes="Bold"
+                        TextColor="Black"/>
+                    <Entry
+                        x:Name="NombreParadaEntry"
+                        Placeholder="Ejemplo: Parada UCR"/>
+
+                    <Label
+                        Text="Orden de la parada"
+                        FontAttributes="Bold"
+                        TextColor="Black"/>
+                    <Entry
+                        x:Name="OrdenParadaEntry"
+                        Placeholder="Ejemplo: 1"
+                        Keyboard="Numeric"/>
+
+                    <Label
+                        Text="Latitud de la parada"
+                        FontAttributes="Bold"
+                        TextColor="Black"/>
+                    <Entry
+                        x:Name="LatitudParadaEntry"
+                        Placeholder="Ejemplo: 9.9350"
+                        Keyboard="Numeric"/>
+
+                    <Label
+                        Text="Longitud de la parada"
+                        FontAttributes="Bold"
+                        TextColor="Black"/>
+                    <Entry 
+                        x:Name="LongitudParadaEntry"
+                        Placeholder="Ejemplo: -84.0833"
+                        Keyboard="Numeric"/>
+
+                    <Button
+                        Text="Agregar parada"
+                        BackgroundColor="#2563EB"
+                        TextColor="White"
+                        CornerRadius="12"
+                        HeightRequest="50"
+                        Clicked="OnAgregarParadaClicked"/>
+
+                    <Button
+                        Text="Actualizar parada seleccionada"
+                        Background="#111827"
+                        TextColor="White"
+                        CornerRadius="12"
+                        HeightRequest="50"
+                        Clicked="OnActualizarParadaClicked"/>
+
+                    <Label 
+                        x:Name="MensajeParadaLabel"
+                        Text=""
+                        FontAttributes="Bold"
+                        IsVisible="False"/>
+
+                    <CollectionView
+                        x:Name="ParadasCollectionView"
+                        SelectionMode="Single"
+                        SelectionChanged="OnParadaSeleccionada"
+                        SelectionChangedCommandParameter="{Binding .}">
+
+
+                        <CollectionView.ItemTemplate>
+                            
+                       
+                        <DataTemplate>
+                                <Frame
+                                Margin="0,5"
+                                Padding="12"
+                                CornerRadius="12"
+                                BackgroundColor="#F9FAFB"
+                                HasShadow="True">
+
+
+                                    <VerticalStackLayout Spacing="4">
+
+                                    <Label
+                                        Text="{Binding Nombre}"
+                                        FontAttributes="Bold"
+                                        TextColor="Black"/>
+
+                                    <Label
+                                        Text="{Binding RutaAsociada}"
+                                        TextColor="#6B7280"/>
+
+                                    <Label
+                                        Text="{Binding Detalle}"
+                                        TextColor="#6B7280"/>
+
+                                    <Button
+                                        Text="Editar"
+                                        BackgroundColor="#E5E7EB"
+                                        TextColor="Black"
+                                        CornerRadius="10"
+                                        HeightRequest="40"
+                                        MinimumHeightRequest="40"
+                                        IsVisible="True"
+                                        Clicked="OnEditarParadaClicked"/>
+
+                                    </VerticalStackLayout>
+                              
+                            </Frame>
+                        </DataTemplate>
+                        </CollectionView.ItemTemplate>
+
+                    </CollectionView>
+                        
+                        
+                </VerticalStackLayout>
+            </Frame>
+     </VerticalStackLayout>
+  </ScrollView>
 </ContentPage>
