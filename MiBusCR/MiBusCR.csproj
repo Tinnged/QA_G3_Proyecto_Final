@@ -67,6 +67,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="AdminMainPanelV2.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AgregarParadasPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="DetalleRuta.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiBusCR.AgregarParadasPage"
+             Title="Agregar Paradas"
+             BackgroundColor="#F3F4F6">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="18">
+
+            <Label Text="Agregar Paradas"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="#111827"/>
+
+            <Label Text="Agregue paradas a las rutas existentes"
+                   FontSize="16"
+                   TextColor="#6B7280"/>
+
+            <Frame BackgroundColor="White"
+                   CornerRadius="18"
+                   Padding="20"
+                   HasShadow="True">
+                <VerticalStackLayout Spacing="15">
+
+                    <Label Text="Seleccionar ruta" FontAttributes="Bold" TextColor="Black"/>
+                    <Picker x:Name="RutaPicker"
+                            Title="-- Seleccione una ruta --"
+                            ItemDisplayBinding="{Binding Nombre}"
+                            SelectedIndexChanged="OnRutaPickerChanged"/>
+
+                    <Label Text="Nombre de la parada" FontAttributes="Bold" TextColor="Black"/>
+                    <Entry x:Name="NombreParadaEntry" Placeholder="Ejemplo: Parada UCR"/>
+
+                    <Label Text="Orden de la parada" FontAttributes="Bold" TextColor="Black"/>
+                    <Entry x:Name="OrdenParadaEntry" Placeholder="Ejemplo: 1" Keyboard="Numeric"/>
+
+                    <Label Text="Latitud de la parada" FontAttributes="Bold" TextColor="Black"/>
+                    <Entry x:Name="LatitudParadaEntry" Placeholder="Ejemplo: 9.9350" Keyboard="Numeric"/>
+
+                    <Label Text="Longitud de la parada" FontAttributes="Bold" TextColor="Black"/>
+                    <Entry x:Name="LongitudParadaEntry" Placeholder="Ejemplo: -84.0833" Keyboard="Numeric"/>
+
+                    <Button Text="Agregar parada"
+                            BackgroundColor="#2563EB"
+                            TextColor="White"
+                            CornerRadius="12"
+                            HeightRequest="50"
+                            Clicked="OnAgregarParadaClicked"/>
+
+                    <Label x:Name="MensajeParadaLabel"
+                           Text=""
+                           FontAttributes="Bold"
+                           IsVisible="False"/>
+
+                    <Label Text="Paradas de la ruta seleccionada"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           Margin="0,8,0,0"/>
+
+                    <CollectionView x:Name="ParadasCollectionView"
+                                    SelectionMode="None">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame Margin="0,5"
+                                       Padding="12"
+                                       CornerRadius="12"
+                                       BackgroundColor="#F9FAFB"
+                                       HasShadow="False">
+                                    <VerticalStackLayout Spacing="4">
+                                        <Label Text="{Binding Nombre}"
+                                               FontAttributes="Bold"
+                                               TextColor="Black"/>
+                                        <Label Text="{Binding Detalle}"
+                                               TextColor="#6B7280"/>
+                                    </VerticalStackLayout>
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

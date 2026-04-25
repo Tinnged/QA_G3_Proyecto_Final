@@ -27,7 +27,10 @@ namespace MiBusCR.Models
         [Reference(typeof(Parada))]
         public Parada DetalleParada { get; set; }
 
+        [Column("no_es_la_primera", ignoreOnInsert: true, ignoreOnUpdate: true)]
         public bool NoEsLaPrimera { get; set; }
+
+        [Column("no_es_la_ultima", ignoreOnInsert: true, ignoreOnUpdate: true)]
         public bool NoEsLaUltima { get; set; }
 
     }

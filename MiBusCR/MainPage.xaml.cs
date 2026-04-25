@@ -183,7 +183,7 @@ namespace MiBusCR
         private async void OnAdminClicked(object sender, EventArgs e)
         {
             // await Navigation.PushAsync(new AdminPage());
-          await Navigation.PushAsync(new PanelAdministrador());
+          await Navigation.PushAsync(new AdminMainPanelV2());
         }
 
 

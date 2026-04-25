@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Supabase.Postgrest.Attributes;
 using Supabase.Postgrest.Models;
+using System.Text.Json.Serialization;
 
 namespace MiBusCR.Models
 {
@@ -39,10 +40,17 @@ namespace MiBusCR.Models
         [Column("provincia_final")]
         public string ProvinciaFinal { get; set; }
 
-        public decimal MontoTarifa { get; set; }
+        [Column("acepta_efectivo", ignoreOnInsert: true, ignoreOnUpdate: true)]
         public bool AceptaEfectivo { get; set; }
+
+        [Column("acepta_tarjeta", ignoreOnInsert: true, ignoreOnUpdate: true)]
         public bool AceptaTarjeta { get; set; }
+
+        [Column("acepta_sinpe", ignoreOnInsert: true, ignoreOnUpdate: true)]
         public bool AceptaSinpe { get; set; }
+
+        [Column("monto_tarifa", ignoreOnInsert: true, ignoreOnUpdate: true)]
+        public decimal MontoTarifa { get; set; }
 
     }
 
