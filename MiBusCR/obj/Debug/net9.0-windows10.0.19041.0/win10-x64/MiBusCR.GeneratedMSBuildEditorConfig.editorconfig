@@ -58,6 +58,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MiBusCR.Feedback.xaml
 build_metadata.AdditionalFiles.TargetPath = Feedback.xaml
 build_metadata.AdditionalFiles.RelativePath = Feedback.xaml
 
+[C:/Git/QA_G3_Proyecto_Final/MiBusCR/FeedbackAdmin.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MiBusCR.FeedbackAdmin.xaml
+build_metadata.AdditionalFiles.TargetPath = FeedbackAdmin.xaml
+build_metadata.AdditionalFiles.RelativePath = FeedbackAdmin.xaml
+
 [C:/Git/QA_G3_Proyecto_Final/MiBusCR/InformacionRutasV2.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MiBusCR.InformacionRutasV2.xaml

@@ -76,6 +76,9 @@
 	  <MauiXaml Update="DetalleRuta.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="FeedbackAdmin.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="InformacionRutasV2.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

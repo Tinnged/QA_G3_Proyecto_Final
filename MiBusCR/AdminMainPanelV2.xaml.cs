@@ -68,8 +68,8 @@ public partial class AdminMainPanelV2 : ContentPage
 
     private async void OnFeedbackClicked(object sender, TappedEventArgs e)
     {
-        // await Navigation.PushAsync(new FeedbackPage());
-        await DisplayAlert("Feedback", "Sección en construcción", "OK");
+         await Navigation.PushAsync(new FeedbackAdmin());
+
     }
 
     private async void OnCrearRutaClicked(object sender, TappedEventArgs e)

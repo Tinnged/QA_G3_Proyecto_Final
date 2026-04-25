@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiBusCR.FeedbackAdmin"
+             Title="Feedback de Usuarios"
+             BackgroundColor="#F3F4F6">
+
+    <Grid RowDefinitions="Auto, *">
+
+        <!-- Header -->
+        <Grid Grid.Row="0" ColumnDefinitions="Auto, *"
+              BackgroundColor="White"
+              Padding="15,12">
+            <Button Grid.Column="0"
+                    Text="&#8592;"
+                    FontSize="20"
+                    BackgroundColor="Transparent"
+                    TextColor="#111827"
+                    Padding="0"
+                    WidthRequest="36"
+                    HeightRequest="36"
+                    Clicked="OnBackClicked"/>
+            <Label Grid.Column="1"
+                   Text="Feedback de Usuarios"
+                   FontSize="17"
+                   FontAttributes="Bold"
+                   TextColor="#111827"
+                   VerticalOptions="Center"
+                   Margin="8,0,0,0"/>
+        </Grid>
+
+        <!-- Content -->
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Padding="20" Spacing="18">
+
+                <Label Text="Feedback de Usuarios"
+                       FontSize="28"
+                       FontAttributes="Bold"
+                       TextColor="#111827"/>
+
+                <Label Text="Reportes y opiniones enviados por los usuarios"
+                       FontSize="16"
+                       TextColor="#6B7280"/>
+
+                <Frame BackgroundColor="White"
+                       CornerRadius="18"
+                       Padding="20"
+                       HasShadow="True">
+                    <VerticalStackLayout Spacing="15">
+
+                        <Button Text="Cargar feedback"
+                                BackgroundColor="#2563EB"
+                                TextColor="White"
+                                CornerRadius="12"
+                                HeightRequest="50"
+                                Clicked="OnCargarFeedbackClicked"/>
+
+                        <CollectionView x:Name="FeedbackCollectionView">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Frame Margin="0,5"
+                                           Padding="12"
+                                           CornerRadius="12"
+                                           BackgroundColor="#F9FAFB"
+                                           HasShadow="False">
+                                        <VerticalStackLayout Spacing="4">
+                                            <Label Text="{Binding TipoReporte}"
+                                                   FontAttributes="Bold"
+                                                   TextColor="Black"/>
+                                            <Label Text="{Binding Comentario}"
+                                                   TextColor="#6B7280"/>
+                                            <Label Text="{Binding Estado}"
+                                                   TextColor="#6B7280"/>
+                                        </VerticalStackLayout>
+                                    </Frame>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+
+                    </VerticalStackLayout>
+                </Frame>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+    </Grid>
+</ContentPage>

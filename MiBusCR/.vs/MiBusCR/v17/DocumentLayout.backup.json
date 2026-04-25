@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|c:\\git\\qa_g3_proyecto_final\\mibuscr\\feedbackadmin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|solutionrelative:feedbackadmin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|c:\\git\\qa_g3_proyecto_final\\mibuscr\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|solutionrelative:models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|c:\\git\\qa_g3_proyecto_final\\mibuscr\\feedback.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|solutionrelative:feedback.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|c:\\git\\qa_g3_proyecto_final\\mibuscr\\feedback.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|solutionrelative:feedback.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|c:\\git\\qa_g3_proyecto_final\\mibuscr\\detalleruta.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|solutionrelative:detalleruta.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|c:\\git\\qa_g3_proyecto_final\\mibuscr\\adminmainpanelv2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|solutionrelative:adminmainpanelv2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|c:\\git\\qa_g3_proyecto_final\\mibuscr\\feedbackadmin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|solutionrelative:feedbackadmin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|c:\\git\\qa_g3_proyecto_final\\mibuscr\\models\\reporteusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|solutionrelative:models\\reporteusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|c:\\git\\qa_g3_proyecto_final\\mibuscr\\models\\tarifaruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,24 +98,8 @@
       "RelativeMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|solutionrelative:models\\administradores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|c:\\git\\qa_g3_proyecto_final\\mibuscr\\detalleruta.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|solutionrelative:detalleruta.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|c:\\git\\qa_g3_proyecto_final\\mibuscr\\feedback.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|solutionrelative:feedback.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|c:\\git\\qa_g3_proyecto_final\\mibuscr\\feedback.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|solutionrelative:feedback.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|c:\\git\\qa_g3_proyecto_final\\mibuscr\\detalleruta.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|solutionrelative:detalleruta.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|c:\\git\\qa_g3_proyecto_final\\mibuscr\\models\\reporteusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|solutionrelative:models\\reporteusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D3766D6-2E31-4534-AEC0-5D55D05F426E}|MiBusCR.csproj|c:\\git\\qa_g3_proyecto_final\\mibuscr\\informacionrutasv2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -105,48 +117,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AgregarParadasPage.xaml",
-              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\AgregarParadasPage.xaml",
-              "RelativeDocumentMoniker": "AgregarParadasPage.xaml",
-              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\AgregarParadasPage.xaml",
-              "RelativeToolTip": "AgregarParadasPage.xaml",
-              "ViewState": "AgIAABoAAAAAAAAAAAAUwFYAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-25T01:28:47.344Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ParadaRuta.cs",
-              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\ParadaRuta.cs",
-              "RelativeDocumentMoniker": "Models\\ParadaRuta.cs",
-              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\ParadaRuta.cs",
-              "RelativeToolTip": "Models\\ParadaRuta.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T00:48:13.534Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminMainPanelV2.xaml.cs",
-              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\AdminMainPanelV2.xaml.cs",
-              "RelativeDocumentMoniker": "AdminMainPanelV2.xaml.cs",
-              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\AdminMainPanelV2.xaml.cs",
-              "RelativeToolTip": "AdminMainPanelV2.xaml.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAMwDsAAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T00:10:28.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "Xamarin.Android.Common.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.105\\tools\\Xamarin.Android.Common.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\35.0.105\\tools\\Xamarin.Android.Common.targets",
@@ -158,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "TarifaRuta.cs",
               "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\TarifaRuta.cs",
               "RelativeDocumentMoniker": "Models\\TarifaRuta.cs",
@@ -166,12 +141,11 @@
               "RelativeToolTip": "Models\\TarifaRuta.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T04:20:52.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T04:20:52.818Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "PanelAdministrador.xaml.cs",
               "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\PanelAdministrador.xaml.cs",
               "RelativeDocumentMoniker": "PanelAdministrador.xaml.cs",
@@ -179,12 +153,11 @@
               "RelativeToolTip": "PanelAdministrador.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T00:16:04.945Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-25T00:16:04.945Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "AdminMainPanelV2.xaml",
               "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\AdminMainPanelV2.xaml",
               "RelativeDocumentMoniker": "AdminMainPanelV2.xaml",
@@ -196,7 +169,108 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DetalleRuta.xaml",
+              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\DetalleRuta.xaml",
+              "RelativeDocumentMoniker": "DetalleRuta.xaml",
+              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\DetalleRuta.xaml",
+              "RelativeToolTip": "DetalleRuta.xaml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-22T05:08:42.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Feedback.xaml",
+              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Feedback.xaml",
+              "RelativeDocumentMoniker": "Feedback.xaml",
+              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Feedback.xaml",
+              "RelativeToolTip": "Feedback.xaml",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAAwAABAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-22T05:05:36.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Feedback.xaml.cs",
+              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Feedback.xaml.cs",
+              "RelativeDocumentMoniker": "Feedback.xaml.cs",
+              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Feedback.xaml.cs",
+              "RelativeToolTip": "Feedback.xaml.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAwGYAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T05:06:07.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\Feedback.cs",
+              "RelativeDocumentMoniker": "Models\\Feedback.cs",
+              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\Feedback.cs",
+              "RelativeToolTip": "Models\\Feedback.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T02:46:43.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FeedbackAdmin.xaml.cs",
+              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\FeedbackAdmin.xaml.cs",
+              "RelativeDocumentMoniker": "FeedbackAdmin.xaml.cs",
+              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\FeedbackAdmin.xaml.cs",
+              "RelativeToolTip": "FeedbackAdmin.xaml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwAwAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T02:49:25.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminMainPanelV2.xaml.cs",
+              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\AdminMainPanelV2.xaml.cs",
+              "RelativeDocumentMoniker": "AdminMainPanelV2.xaml.cs",
+              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\AdminMainPanelV2.xaml.cs",
+              "RelativeToolTip": "AdminMainPanelV2.xaml.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAADwv0YAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T00:10:28.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ParadaRuta.cs",
+              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\ParadaRuta.cs",
+              "RelativeDocumentMoniker": "Models\\ParadaRuta.cs",
+              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\ParadaRuta.cs",
+              "RelativeToolTip": "Models\\ParadaRuta.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T00:48:13.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FeedbackAdmin.xaml",
+              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\FeedbackAdmin.xaml",
+              "RelativeDocumentMoniker": "FeedbackAdmin.xaml",
+              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\FeedbackAdmin.xaml",
+              "RelativeToolTip": "FeedbackAdmin.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-25T02:47:36.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "PanelAdministrador.xaml",
               "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\PanelAdministrador.xaml",
               "RelativeDocumentMoniker": "PanelAdministrador.xaml",
@@ -209,138 +283,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "AgregarParadasPage.xaml.cs",
-              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\AgregarParadasPage.xaml.cs",
-              "RelativeDocumentMoniker": "AgregarParadasPage.xaml.cs",
-              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\AgregarParadasPage.xaml.cs",
-              "RelativeToolTip": "AgregarParadasPage.xaml.cs",
-              "ViewState": "AgIAAMEAAAAAAAAAAAAkwN0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T01:29:56.152Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\App.xaml.cs",
-              "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\App.xaml.cs",
-              "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T00:21:23.239Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Ruta.cs",
-              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\Ruta.cs",
-              "RelativeDocumentMoniker": "Models\\Ruta.cs",
-              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\Ruta.cs",
-              "RelativeToolTip": "Models\\Ruta.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAcwDQAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T04:20:24.92Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Parada.cs",
-              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\Parada.cs",
-              "RelativeDocumentMoniker": "Models\\Parada.cs",
-              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\Parada.cs",
-              "RelativeToolTip": "Models\\Parada.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T00:48:08.334Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "MainPage.xaml.cs",
-              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\MainPage.xaml.cs",
-              "RelativeToolTip": "MainPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T04:19:12.011Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\MainPage.xaml",
-              "RelativeDocumentMoniker": "MainPage.xaml",
-              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\MainPage.xaml",
-              "RelativeToolTip": "MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-24T04:19:07.775Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Administradores.cs",
-              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\Administradores.cs",
-              "RelativeDocumentMoniker": "Models\\Administradores.cs",
-              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\Administradores.cs",
-              "RelativeToolTip": "Models\\Administradores.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T00:06:58.691Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DatabaseConfig.cs",
-              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\DatabaseConfig.cs",
-              "RelativeDocumentMoniker": "Models\\DatabaseConfig.cs",
-              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\DatabaseConfig.cs",
-              "RelativeToolTip": "Models\\DatabaseConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T05:06:35.122Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Empresa.cs",
-              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\Empresa.cs",
-              "RelativeDocumentMoniker": "Models\\Empresa.cs",
-              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\Empresa.cs",
-              "RelativeToolTip": "Models\\Empresa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T00:08:06.563Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "DetalleRuta.xaml.cs",
-              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\DetalleRuta.xaml.cs",
-              "RelativeDocumentMoniker": "DetalleRuta.xaml.cs",
-              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\DetalleRuta.xaml.cs",
-              "RelativeToolTip": "DetalleRuta.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T05:08:46.605Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "DetalleRuta.xaml",
-              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\DetalleRuta.xaml",
-              "RelativeDocumentMoniker": "DetalleRuta.xaml",
-              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\DetalleRuta.xaml",
-              "RelativeToolTip": "DetalleRuta.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-22T05:08:42.835Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
               "Title": "ReporteUsuario.cs",
               "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\ReporteUsuario.cs",
               "RelativeDocumentMoniker": "Models\\ReporteUsuario.cs",
@@ -352,31 +294,139 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Feedback.xaml.cs",
-              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Feedback.xaml.cs",
-              "RelativeDocumentMoniker": "Feedback.xaml.cs",
-              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Feedback.xaml.cs",
-              "RelativeToolTip": "Feedback.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAArAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "AgregarParadasPage.xaml",
+              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\AgregarParadasPage.xaml",
+              "RelativeDocumentMoniker": "AgregarParadasPage.xaml",
+              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\AgregarParadasPage.xaml",
+              "RelativeToolTip": "AgregarParadasPage.xaml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAUwFYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-25T01:28:47.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AgregarParadasPage.xaml.cs",
+              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\AgregarParadasPage.xaml.cs",
+              "RelativeDocumentMoniker": "AgregarParadasPage.xaml.cs",
+              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\AgregarParadasPage.xaml.cs",
+              "RelativeToolTip": "AgregarParadasPage.xaml.cs",
+              "ViewState": "AgIAAMEAAAAAAAAAAAAkwN0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T05:06:07.958Z"
+              "WhenOpened": "2026-04-25T01:29:56.152Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "Feedback.xaml",
-              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Feedback.xaml",
-              "RelativeDocumentMoniker": "Feedback.xaml",
-              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Feedback.xaml",
-              "RelativeToolTip": "Feedback.xaml",
-              "ViewState": "AgIAANYAAAAAAAAAAAAAwAABAAAOAAAAAAAAAA==",
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T00:21:23.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Ruta.cs",
+              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\Ruta.cs",
+              "RelativeDocumentMoniker": "Models\\Ruta.cs",
+              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\Ruta.cs",
+              "RelativeToolTip": "Models\\Ruta.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwDQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T04:20:24.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Parada.cs",
+              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\Parada.cs",
+              "RelativeDocumentMoniker": "Models\\Parada.cs",
+              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\Parada.cs",
+              "RelativeToolTip": "Models\\Parada.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T00:48:08.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MainPage.xaml.cs",
+              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\MainPage.xaml.cs",
+              "RelativeToolTip": "MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T04:19:12.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MainPage.xaml",
+              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\MainPage.xaml",
+              "RelativeToolTip": "MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-22T05:05:36.423Z"
+              "WhenOpened": "2026-04-24T04:19:07.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Administradores.cs",
+              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\Administradores.cs",
+              "RelativeDocumentMoniker": "Models\\Administradores.cs",
+              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\Administradores.cs",
+              "RelativeToolTip": "Models\\Administradores.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T00:06:58.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DatabaseConfig.cs",
+              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\DatabaseConfig.cs",
+              "RelativeDocumentMoniker": "Models\\DatabaseConfig.cs",
+              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\DatabaseConfig.cs",
+              "RelativeToolTip": "Models\\DatabaseConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T05:06:35.122Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
+              "Title": "Empresa.cs",
+              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\Empresa.cs",
+              "RelativeDocumentMoniker": "Models\\Empresa.cs",
+              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\Models\\Empresa.cs",
+              "RelativeToolTip": "Models\\Empresa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T00:08:06.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DetalleRuta.xaml.cs",
+              "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\DetalleRuta.xaml.cs",
+              "RelativeDocumentMoniker": "DetalleRuta.xaml.cs",
+              "ToolTip": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\DetalleRuta.xaml.cs",
+              "RelativeToolTip": "DetalleRuta.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T05:08:46.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "InformacionRutasV2.xaml.cs",
               "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\InformacionRutasV2.xaml.cs",
               "RelativeDocumentMoniker": "InformacionRutasV2.xaml.cs",
@@ -388,7 +438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "InformacionRutasV2.xaml",
               "DocumentMoniker": "C:\\Git\\QA_G3_Proyecto_Final\\MiBusCR\\InformacionRutasV2.xaml",
               "RelativeDocumentMoniker": "InformacionRutasV2.xaml",

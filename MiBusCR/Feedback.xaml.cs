@@ -92,7 +92,7 @@ public partial class Feedback : ContentPage
                 await cliente.InitializeAsync();
             }
 
-            var reporte = new ReporteUsuario
+            var reporte = new Models.FeedbackAdmin
             {
                 RutaId = _rutaId,
                 TipoReporte = _categoriaSeleccionada,
@@ -100,7 +100,7 @@ public partial class Feedback : ContentPage
                 Estado = "Pendiente"
             };
 
-            await cliente.From<ReporteUsuario>().Insert(reporte);
+            await cliente.From<Models.FeedbackAdmin>().Insert(reporte);
 
             LoadingIndicator.IsRunning = false;
             LoadingIndicator.IsVisible = false;
